@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Header Section with Background Color -->
+    <RelativeLayout
+        android:id="@+id/headerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#FFC107"> <!-- Add a background color here, for example, #FFC107 for amber color -->
+
+        <!-- App Logo/Icon -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo1"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"/>
+
+        <!-- User Authentication Options (Login/Signup) -->
+        <TextView
+            android:id="@+id/authOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login / Signup"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"/>
+
+    </RelativeLayout>
+
+    <!-- Navigation Bar -->
+    <LinearLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/headerSection"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <!-- Home -->
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <!-- Nearby Shops -->
+        <TextView
+            android:id="@+id/nearbyShops"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nearby Shops"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <!-- Orders -->
+        <TextView
+            android:id="@+id/orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Orders"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+        <!-- Profile -->
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for specific shops or items"
+        android:layout_below="@id/navigationBar"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"/>
+
+
+</RelativeLayout>
